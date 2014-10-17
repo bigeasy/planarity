@@ -23,3 +23,9 @@ For a simple, connected, planar graph with v vertices and e edges, the following
 
 Theorem 1. If v ≥ 3 then e ≤ 3v − 6;
 Theorem 2. If v ≥ 3 and there are no cycles of length 3, then e ≤ 2v − 4.
+
+Euler:
+
+Euler's formula states that if a finite, connected, planar graph is drawn in the plane without any edge intersections, and v is the number of vertices, e is the number of edges and f is the number of faces (regions bounded by edges, including the outer, infinitely large region), then:
+
+v − e + f = 2.
