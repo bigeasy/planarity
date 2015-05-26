@@ -4,6 +4,10 @@ cut vertices can be connected to multiple biconnected components.
 
 The Polish mathematician Kazimierz Kuratowski provided a characterization of planar graphs in terms of forbidden graphs, now known as Kuratowski's theorem:
 
+graph: graph G(V, E) is an ordered pair consisting of a finite set V of vertices and a finite set
+E of edges, that is, pairs (u, v) of vertices. If each edge is an unordered (ordered) pair of
+vertices, then the graph is undirected (directed).
+
 A finite graph is planar if and only if it does not contain a subgraph that is a subdivision of K5 (the complete graph on five vertices) or K3,3 (complete bipartite graph on six vertices, three of which connect to each of the other three, also known as the utility graph).
 A subdivision of a graph results from inserting vertices into edges (for example, changing an edge •——• to •—•—•) zero or more times.
 
