@@ -14,6 +14,12 @@ Given two graphs G1(V1, E1) and G2(V2, E2), their union G1 ∪ G2 is the graph G
 V2, E1 ∪ E2). Analogously, their intersection G1 ∩ G2 is the graph G(V1 ∩ V2, E1 ∩ E2). A
 graph G2 is a subgraph of G1 if G1 ∪ G2 = G1.
 
+Given a graph G(V, E) and a subset V ′ of V , the subgraph induced by V′ is the graph G′(V′, E′), where E′
+is the set of edges of E that have both endvertices in V′. Given a graph G(V, E) and a subset E′ of E, the subgraph
+induced by E′ is the graph G′(V′, E′), where V′ is the set of vertices incident to E′. A subdivision of an edge (u, v)
+consists of the insertion of a new node w and the replacement of (u, v) with edges (u, w) and (w, v). A graph G2
+is a subdivision of G1 if it can be obtained from G1 through a sequence of edge subdivisions.
+
 A finite graph is planar if and only if it does not contain a subgraph that is a subdivision of K5 (the complete graph on five vertices) or K3,3 (complete bipartite graph on six vertices, three of which connect to each of the other three, also known as the utility graph).
 A subdivision of a graph results from inserting vertices into edges (for example, changing an edge •——• to •—•—•) zero or more times.
 
