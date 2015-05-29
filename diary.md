@@ -48,3 +48,5 @@ v − e + f = 2.
 
 convexity:
 A plane graph is said to be convex if all of its faces (including the outer face) are convex polygons. A planar graph may be drawn convexly if and only if it is a subdivision of a 3-vertex-connected planar graph.
+
+graphing in JS: http://www.graphdracula.net/
