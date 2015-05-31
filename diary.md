@@ -52,3 +52,5 @@ A plane graph is said to be convex if all of its faces (including the outer face
 graphing in JS: http://www.graphdracula.net/
 
 Three.js has vectors. http://threejs.org/examples/webgl_geometry_shapes.html
+
+approaches to Euler's formula: http://www.ics.uci.edu/~eppstein/junkyard/euler/
