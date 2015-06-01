@@ -1,3 +1,4 @@
+
 From wikipedia:
 
 cut vertices can be connected to multiple biconnected components.
@@ -54,3 +55,6 @@ graphing in JS: http://www.graphdracula.net/
 Three.js has vectors. http://threejs.org/examples/webgl_geometry_shapes.html
 
 approaches to Euler's formula: http://www.ics.uci.edu/~eppstein/junkyard/euler/
+
+
+figure out how to represent vertices, edges, graphs. create utility functions and sketch algorithm from there?
