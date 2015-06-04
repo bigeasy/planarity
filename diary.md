@@ -60,3 +60,5 @@ approaches to Euler's formula: http://www.ics.uci.edu/~eppstein/junkyard/euler/
 figure out how to represent vertices, edges, graphs. create utility functions and sketch algorithm from there?
 
 graph drawing, planarity test, etc. in Java: http://www.jharris.ca/JGraphEd/#source
+
+Boost docs for planar testing/embedding: http://www.boost.org/doc/libs/1_36_0/libs/graph/doc/boyer_myrvold.html
