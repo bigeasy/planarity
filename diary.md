@@ -62,3 +62,5 @@ figure out how to represent vertices, edges, graphs. create utility functions an
 graph drawing, planarity test, etc. in Java: http://www.jharris.ca/JGraphEd/#source
 
 Boost docs for planar testing/embedding: http://www.boost.org/doc/libs/1_36_0/libs/graph/doc/boyer_myrvold.html
+
+Google's C implementation. https://code.google.com/p/planarity/source/browse/#svn%2Fbranches%2FBranch-ConvertToEdgeRec%2Fc
