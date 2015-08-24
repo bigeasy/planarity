@@ -2,7 +2,7 @@
 //
 
 function Vector (list) {
-    this.stuff = list
+    this.elems = list
 }
 
 Vector.prototype.add = function (other) {
