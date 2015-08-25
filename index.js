@@ -6,6 +6,14 @@ function Vector (list) {
 }
 
 Vector.prototype.add = function (other) {
+    if (this.elems.length !== other.elems.length) return null;
+    return new Vector((function () {
+        var v = other.elems, ret = [];
+        for (var elem in v) {
+            ret.push(v[elem] + this.elems[elem])
+        }
+        return ret;
+    }).bind(this)())
 }
 
 Vector.prototype.subtract = function (other) {
@@ -25,3 +33,5 @@ Vector.prototype.max = function () {
 
 Vector.prototype.modulus = function () {
 }
+
+exports.Vector = Vector
