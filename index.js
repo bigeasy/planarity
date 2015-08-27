@@ -31,6 +31,11 @@ Vector.prototype.multiply = function (s) {
 }
 
 Vector.prototype.equals = function (other) {
+    if (this.elems.length !== other.elems.length) return false;
+    for (var v in other.elems) {
+        if (other.elems[v] !== this.elems[v]) return false;
+    }
+    return true;
 }
 
 Vector.prototype.copy = function () {
