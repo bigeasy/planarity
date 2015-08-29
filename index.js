@@ -5,7 +5,7 @@ function Vector (list) {
     this.elems = list
 }
 
-Vector.prototype.add = function (other) {
+Vector.prototype.add = function (other) { // :: Vector -> Vector
     if (this.elems.length !== other.elems.length) return null;
     return new Vector((function () {
         var v = other.elems, ret = [];
