@@ -46,5 +46,3 @@ Vector.prototype.max = function () {
 
 Vector.prototype.modulus = function () {
 }
-
-exports.Vector = Vector
