@@ -1,7 +1,7 @@
 // Vector implementation
 //
 
-function Vector (list) {
+function Vector (list) { // :: [Int] -> Vector
     this.elems = list
 }
 
