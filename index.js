@@ -28,6 +28,10 @@ Vector.prototype.subtract = function (other) {
 }
 
 Vector.prototype.multiply = function (s) {
+    for (var v in this.elems) {
+        this.elems[v] = this.elems[v] * s
+    }
+    return new Vector(this.elems)
 }
 
 Vector.prototype.equals = function (other) {
@@ -39,6 +43,9 @@ Vector.prototype.equals = function (other) {
 }
 
 Vector.prototype.copy = function () {
+}
+
+Vector.prototype.dot = function () {
 }
 
 Vector.prototype.max = function () {
