@@ -45,7 +45,10 @@ Vector.prototype.equals = function (other) {
 Vector.prototype.copy = function () {
 }
 
-Vector.prototype.dot = function () {
+Vector.prototype.dot = function (other) {
+}
+
+Vector.prototype.cross = function (other) {
 }
 
 Vector.prototype.max = function () {
