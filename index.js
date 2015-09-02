@@ -6,6 +6,7 @@ function Vector (list) { // :: [Int] -> Vector
 }
 
 Vector.prototype.add = function (other) { // :: Vector -> Vector
+    if (!(other instanceof Array)) return null;
     if (this.elems.length !== other.elems.length) return null;
     return new Vector((function () {
         var v = other.elems, ret = [];
@@ -17,6 +18,7 @@ Vector.prototype.add = function (other) { // :: Vector -> Vector
 }
 
 Vector.prototype.subtract = function (other) {
+    if (!(other instanceof Array)) return null;
     if (this.elems.length !== other.elems.length) return null;
     return new Vector((function () {
         var v = other.elems, ret = [];
@@ -28,6 +30,8 @@ Vector.prototype.subtract = function (other) {
 }
 
 Vector.prototype.multiply = function (s) {
+    if (!(other instanceof Array)) return null;
+    if (this.elems.length !== other.elems.length) return null;
     for (var v in this.elems) {
         this.elems[v] = this.elems[v] * s
     }
@@ -35,6 +39,7 @@ Vector.prototype.multiply = function (s) {
 }
 
 Vector.prototype.equals = function (other) {
+    if (!(other instanceof Array)) return null;
     if (this.elems.length !== other.elems.length) return false;
     for (var v in other.elems) {
         if (other.elems[v] !== this.elems[v]) return false;
