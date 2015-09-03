@@ -47,6 +47,11 @@ Vector.prototype.equals = function (other) {
     return true;
 }
 
+Vector.prototype.divide = function (other) {
+    if (!(other instanceof Array)) return null;
+    if (this.elems.length !== other.elems.length) return null;
+}
+
 Vector.prototype.copy = function () {
 }
 
