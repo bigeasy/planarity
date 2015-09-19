@@ -56,9 +56,13 @@ Vector.prototype.copy = function () {
 }
 
 Vector.prototype.dot = function (other) {
+    if (!(other instanceof Array)) return null;
+    if (this.elems.length !== other.elems.length) return null;
 }
 
 Vector.prototype.cross = function (other) {
+    if (!(other instanceof Array)) return null;
+    if (this.elems.length !== other.elems.length) return null;
 }
 
 Vector.prototype.max = function () {
