@@ -58,6 +58,11 @@ Vector.prototype.copy = function () {
 Vector.prototype.dot = function (other) {
     if (!(other instanceof Array)) return null;
     if (this.elems.length !== other.elems.length) return null;
+    var ret = 0;
+    for (var v in this.elems) {
+        ret += this.elems[v] * other.elems[v]
+    }
+    return ret;
 }
 
 Vector.prototype.cross = function (other) {
