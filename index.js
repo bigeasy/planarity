@@ -68,6 +68,11 @@ Vector.prototype.dot = function (other) {
 Vector.prototype.cross = function (other) {
     if (!(other instanceof Array)) return null
     if (this.elems.length !== other.elems.length) return null
+    var stuff = []
+    for (var v in this.elems) {
+        stuff.push(this.elems[v] * other.elems[v])
+    }
+    return new Vector(stuff)
 }
 
 Vector.prototype.max = function () {
