@@ -76,6 +76,7 @@ Vector.prototype.cross = function (other) {
 }
 
 Vector.prototype.max = function () {
+    return Math.max(this.elems)
 }
 
 Vector.prototype.modulus = function () {
