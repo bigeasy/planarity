@@ -79,5 +79,9 @@ Vector.prototype.max = function () {
     return Math.max(this.elems)
 }
 
+Vector.prototype.min = function () {
+    return Math.min(this.elems)
+}
+
 Vector.prototype.modulus = function () {
 }
