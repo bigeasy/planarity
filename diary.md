@@ -66,3 +66,6 @@ Boost docs for planar testing/embedding: http://www.boost.org/doc/libs/1_36_0/li
 Google's C implementation. https://code.google.com/p/planarity/source/browse/#svn%2Fbranches%2FBranch-ConvertToEdgeRec%2Fc
 
 planar graph in JS. https://github.com/tantalor/raphael.planarity/blob/master/lib/raphael.planarity.js
+
+#TODO:
+go figure out how to handle dimensions for vectors.
