@@ -50,6 +50,11 @@ Vector.prototype.equals = function (other) {
 Vector.prototype.divide = function (other) {
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
+    var ret = []
+    for (var v in this.elems) {
+        ret.push(this.elems[v] / other.elems[v])
+    }
+    return new Vector(ret)
 }
 
 Vector.prototype.copy = function () {
