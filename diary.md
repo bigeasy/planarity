@@ -69,3 +69,4 @@ planar graph in JS. https://github.com/tantalor/raphael.planarity/blob/master/li
 
 #TODO:
 go figure out how to handle dimensions for vectors.
+accept scalars as well asvectors in math operations
