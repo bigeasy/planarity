@@ -57,9 +57,6 @@ Vector.prototype.divide = function (other) {
     return new Vector(ret)
 }
 
-Vector.prototype.copy = function () {
-}
-
 Vector.prototype.dot = function (other) {
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
@@ -89,4 +86,8 @@ Vector.prototype.min = function () {
 }
 
 Vector.prototype.modulus = function () {
+}
+
+Vector.prototype.copy = function () { // :: -> Vector
+    return new Vector(this.elems)
 }
