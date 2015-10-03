@@ -17,7 +17,7 @@ Vector.prototype.add = function (other) { // :: Vector -> Vector
     }).bind(this)())
 }
 
-Vector.prototype.subtract = function (other) {
+Vector.prototype.subtract = function (other) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
     return new Vector((function () {
@@ -29,7 +29,7 @@ Vector.prototype.subtract = function (other) {
     }).bind(this)())
 }
 
-Vector.prototype.multiply = function (s) {
+Vector.prototype.multiply = function (s) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
     for (var v in this.elems) {
@@ -57,7 +57,7 @@ Vector.prototype.divide = function (other) {
     return new Vector(ret)
 }
 
-Vector.prototype.dot = function (other) {
+Vector.prototype.dot = function (other) { // :: Vector -> Int
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
     var ret = 0
@@ -67,7 +67,7 @@ Vector.prototype.dot = function (other) {
     return ret
 }
 
-Vector.prototype.cross = function (other) {
+Vector.prototype.cross = function (other) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
     var stuff = []
