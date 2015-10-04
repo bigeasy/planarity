@@ -38,7 +38,7 @@ Vector.prototype.multiply = function (s) { // :: Vector -> Vector
     return new Vector(this.elems)
 }
 
-Vector.prototype.equals = function (other) {
+Vector.prototype.equals = function (other) { // :: Vector -> Bool
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return false
     for (var v in other.elems) {
@@ -47,7 +47,7 @@ Vector.prototype.equals = function (other) {
     return true
 }
 
-Vector.prototype.divide = function (other) {
+Vector.prototype.divide = function (other) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
     var ret = []
@@ -77,11 +77,11 @@ Vector.prototype.cross = function (other) { // :: Vector -> Vector
     return new Vector(stuff)
 }
 
-Vector.prototype.max = function () {
+Vector.prototype.max = function () { // :: -> Int
     return Math.max(this.elems)
 }
 
-Vector.prototype.min = function () {
+Vector.prototype.min = function () { // :: -> Int
     return Math.min(this.elems)
 }
 
