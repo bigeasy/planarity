@@ -85,7 +85,7 @@ Vector.prototype.min = function () { // :: -> Int
     return Math.min(this.elems)
 }
 
-Vector.prototype.modulus = function () {
+Vector.prototype.modulus = function () { // :: -> Int
 }
 
 Vector.prototype.copy = function () { // :: -> Vector
