@@ -86,6 +86,11 @@ Vector.prototype.min = function () { // :: -> Int
 }
 
 Vector.prototype.modulus = function () { // :: -> Int
+    var ret = 0;
+    for (var v in this.elems) {
+        ret += Math.pow(this.elems[v], 2)
+    }
+    return ret / 2;
 }
 
 Vector.prototype.copy = function () { // :: -> Vector
