@@ -52,11 +52,13 @@ Vector.prototype.equals = function (other) { // :: Vector -> Bool
 Vector.prototype.divide = function (other) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
-    var ret = []
-    for (var v in this.elems) {
-        ret.push(this.elems[v] / other.elems[v])
-    }
-    return new Vector(ret)
+    return new Vector((function () {
+        var ret = []
+        for (var v in this.elems) {
+            ret.push(this.elems[v] / other.elems[v])
+        }
+        return ret
+    }).bind(this)
 }
 
 Vector.prototype.dot = function (other) { // :: Vector -> Int
@@ -72,11 +74,13 @@ Vector.prototype.dot = function (other) { // :: Vector -> Int
 Vector.prototype.cross = function (other) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
-    var stuff = []
-    for (var v in this.elems) {
-        stuff.push(this.elems[v] * other.elems[v])
+    return new Vector((function () {
+        var stuff = []
+        for (var v in this.elems) {
+            stuff.push(this.elems[v] * other.elems[v])
+        }
+        return stuff
     }
-    return new Vector(stuff)
 }
 
 Vector.prototype.max = function () { // :: -> Int
