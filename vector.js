@@ -32,10 +32,12 @@ Vector.prototype.subtract = function (other) { // :: Vector -> Vector
 Vector.prototype.multiply = function (s) { // :: Vector -> Vector
     if (!(other instanceof Vector)) return null
     if (this.elems.length !== other.elems.length) return null
-    for (var v in this.elems) {
-        this.elems[v] = this.elems[v] * s
-    }
-    return new Vector(this.elems)
+    return new Vector((function () {
+        for (var v in this.elems) {
+            this.elems[v] = this.elems[v] * s
+        }
+        return this.elems
+    }).bind(this)()
 }
 
 Vector.prototype.equals = function (other) { // :: Vector -> Bool
