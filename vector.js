@@ -1,5 +1,4 @@
 // Vector implementation
-//
 
 function Vector (list) { // :: [Int] -> Vector
     this.elems = list
@@ -97,6 +96,8 @@ Vector.prototype.modulus = function () { // :: -> Int
         ret += Math.pow(this.elems[v], 2)
     }
     return ret / 2;
+}
+Vector.prototype.modulo = function (s) { // :: -> Int
 }
 
 Vector.prototype.copy = function () { // :: -> Vector
